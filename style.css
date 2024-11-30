@@ -8,7 +8,7 @@
 
 /* Fondo */
 .bg {
-    background-image: url(https://img.freepik.com/foto-gratis/tiro-escala-grises-hermosa-estructura-arquitectonica-brutalista_181624-5104.jpg?t=st=1732904533~exp=1732908133~hmac=c1785cda99d43e6a149d3effa6050f61fc2da7e9cbc877d28bb175e3473fefcc&w=740);
+    background-image: url(https://www.nubox.com/hubfs/Fondo%20Empresa%201.png);
     width: 100vw;
     height: 100vh;
     background-position: center;
@@ -23,7 +23,7 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    background: #b0afaf;
+    background: #8c8cb1;
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
 }
@@ -34,7 +34,6 @@
     font-size: 35px;
     font-weight: bold;
     text-decoration: none;
-    
 }
 
 /* Enlaces de navegación */
@@ -42,9 +41,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    align-items:flex-end;
     list-style: none;
-
 }
 
 .navbar-nav li a {
@@ -87,7 +84,7 @@
 }
 
 /* Responsivo */
-@media (max-width: 920px) {
+@media (max-width: 767px) {
     .navbar-nav {
         position: fixed;
         top: 80px;
