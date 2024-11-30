@@ -1,0 +1,113 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Fondo */
+.bg {
+    background-image: url(https://img.freepik.com/foto-gratis/tiro-escala-grises-hermosa-estructura-arquitectonica-brutalista_181624-5104.jpg?t=st=1732904533~exp=1732908133~hmac=c1785cda99d43e6a149d3effa6050f61fc2da7e9cbc877d28bb175e3473fefcc&w=740);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Barra de navegación */
+.container-fluid {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: #b0afaf;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.container-fluid .navbar-brand {
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+/* Enlaces de navegación */
+.navbar-nav li a{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items:flex-end;
+    list-style: none;
+
+}
+
+.navbar-nav li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav li a:hover {
+    background: #fff;
+    color: #111;
+}
+
+.navbar-nav .active {
+    background: #fff;
+    color: #111;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+    display: none;
+}
+
+.navbar-toggler {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin: 5px 0;
+}
+
+/* Responsivo */
+@media (max-width: 920px) {
+    .navbar-nav {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: #111;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        text-align: center;
+        transition: left 0.3s ease;
+    }
+
+    .menu-toggle:checked ~ .navbar-nav {
+        left: 0;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+}
